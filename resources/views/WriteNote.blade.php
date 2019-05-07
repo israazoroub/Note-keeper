@@ -1,13 +1,13 @@
-@extends("index")
-@section("QUICKBLOGGER")
+@extends('index')
+@section('QUICKBLOGGER')
     @parent
     <br>
     <p>----------------</p>
     <br>
     <p>Write Notes that your Need</p>
 @endsection
-@section("NoteContent")
-    <form action="{{route("memo.store")}}" method="post">
+@section('NoteContent')
+    <form action="{{route('memo.store')}}" method="post">
         <h3>Note Title</h3>
         <input type="text" name="NT">
         <br><br>

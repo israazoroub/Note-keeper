@@ -1,5 +1,5 @@
-@extends("index")
-@section("QUICKBLOGGER")
+@extends('index')
+@section('QUICKBLOGGER')
     @parent
     <br>
     <p>----------------</p>
@@ -7,8 +7,8 @@
     <p>YOUR NOTES</p>
 @endsection
 
-@section("NoteContent")
-    <table>
+@section('NoteContent')
+    <table border="1">
         <tr>
             <td>Note Title</td>
             <td>Note Content</td>
@@ -26,5 +26,5 @@
             </tr>
         @endforelse
     </table>
-    <a href="{{route("memo.create")}}">Insert another Notes</a>
+    <a href="{{route('Memo.create')}}">Insert another Notes</a>
 @endsection

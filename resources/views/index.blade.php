@@ -7,16 +7,13 @@
     </head>
     <body>
     <!-- section show the title of site -->
-      @section("QUICKBLOGGER")
+      @section('QUICKBLOGGER')
           QUICKBLOGGER
       @show
 
     <div class="container">
-        @yield("NoteContent")
+        @yield('NoteContent')
     </div>
-
-
-
 
     </body>
 </html>

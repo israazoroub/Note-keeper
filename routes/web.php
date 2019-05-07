@@ -15,4 +15,4 @@
     return view('welcome');
 });*/
 
-Route::resource("Memo","NotesController");
+Route::resource('Memo','NotesManagerCtrl');

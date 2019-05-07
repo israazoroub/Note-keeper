@@ -15,16 +15,16 @@ class NotesManagerCtrl extends Controller
     }
     public function create()
     {
-        return view("WriteNote");
+        return view('WriteNote');
     }
     public function store (Request $request )
     {
         $RequestedInfo = $request->all();
-        $TheNote=new Note();
-        $TheNote->NoteTitle=$RequestedInfo["NoteTitle"];
-        $TheNote->NoteContent=$RequestedInfo["NoteContent"];
+        $TheNote=new TheNote();
+        $TheNote->NoteTitle = $RequestedInfo['NT'];
+        $TheNote->NoteContent = $RequestedInfo['NC'];
         $TheNote->save();
-        return redirect()->route('memo.create');
+        return redirect()->route('Memo.create');
 
 
 
